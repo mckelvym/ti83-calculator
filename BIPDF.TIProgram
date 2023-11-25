@@ -10,7 +10,14 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>Disp "BINOMIAL PDF"Disp "(N  nCr K)*"Disp "P^K * Q^(N-K)"Input "TRIALS: ",XInput "PROB: ",YInput "SUCC: ",ZDisp binompdf(X,Y,Z)</string>
+			<string>Disp "BINOMIAL PDF"
+Disp "(N  nCr K)*"
+Disp "P^K * Q^(N-K)"
+Input "TRIALS: ",X
+Input "PROB: ",Y
+Input "SUCC: ",Z
+Disp binompdf(X,Y,Z)
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

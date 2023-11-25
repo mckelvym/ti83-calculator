@@ -10,7 +10,17 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeDisp "What is the "Input "Radius? ",RDisp ""Disp "What is the "Input "Height? ",Hπ*R*H→VClrHomeDisp "Volume: ",VStop</string>
+			<string>ClrHome
+Disp "What is the "
+Input "Radius? ",R
+Disp ""
+Disp "What is the "
+Input "Height? ",H
+π*R*H→V
+ClrHome
+Disp "Volume: ",V
+Stop
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

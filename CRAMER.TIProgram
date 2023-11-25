@@ -10,7 +10,63 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeMenu("Cramer's Rule:","2 Equations",X2,"3 Equations",X3,"Quit",QT)Lbl X2ClrHomeDisp "First Equation:"Disp ""Prompt A,B,CClrHomeDisp "Second Equation:"Disp ""Prompt D,E,FA*E-B*D→ZA*F-D*C→YC*E-F*B→XClrHomeOutput(1,1,"Results:")Output(4,1,"X: ")Output(7,1,"Y: ")Output(4,4,X/Z)Output(7,4,Y/Z)Goto QTEndLbl X3ClrHomeDisp "First Equation:"Disp ""Prompt D,E,F,GClrHomeDisp "Second Equation:"Disp ""Prompt I,J,K,LClrHomeDisp "Third Equation:"Disp ""Prompt N,O,P,QClrHomeD*J*P+E*K*N+F*I*O-N*J*F-O*K*D-P*I*E→θG*J*P+E*K*Q+F*L*O-Q*J*F-O*K*G-P*L*E→XD*L*P+G*K*N+F*I*Q-N*L*F-Q*K*D-P*I*G→YD*J*Q+E*L*N+G*I*O-N*J*G-O*L*D-Q*I*E→ZOutput(1,1,"Results:")Output(3,1,"X: ")Output(5,1,"Y: ")Output(7,1,"Z: ")Output(3,4,X/θ)Output(5,4,Y/θ)Output(7,4,Z/θ)Goto QTEndLbl QTStopEnd</string>
+			<string>ClrHome
+Menu("Cramer's Rule:","2 Equations",X2,"3 Equations",X3,"Quit",QT)
+
+Lbl X2
+ClrHome
+Disp "First Equation:"
+Disp ""
+Prompt A,B,C
+ClrHome
+Disp "Second Equation:"
+Disp ""
+Prompt D,E,F
+A*E-B*D→Z
+A*F-D*C→Y
+C*E-F*B→X
+ClrHome
+Output(1,1,"Results:")
+Output(4,1,"X: ")
+Output(7,1,"Y: ")
+Output(4,4,X/Z)
+Output(7,4,Y/Z)
+Goto QT
+End
+
+Lbl X3
+ClrHome
+Disp "First Equation:"
+Disp ""
+Prompt D,E,F,G
+ClrHome
+Disp "Second Equation:"
+Disp ""
+Prompt I,J,K,L
+ClrHome
+Disp "Third Equation:"
+Disp ""
+Prompt N,O,P,Q
+ClrHome
+
+D*J*P+E*K*N+F*I*O-N*J*F-O*K*D-P*I*E→θ
+G*J*P+E*K*Q+F*L*O-Q*J*F-O*K*G-P*L*E→X
+D*L*P+G*K*N+F*I*Q-N*L*F-Q*K*D-P*I*G→Y
+D*J*Q+E*L*N+G*I*O-N*J*G-O*L*D-Q*I*E→Z
+
+Output(1,1,"Results:")
+Output(3,1,"X: ")
+Output(5,1,"Y: ")
+Output(7,1,"Z: ")
+Output(3,4,X/θ)
+Output(5,4,Y/θ)
+Output(7,4,Z/θ)
+Goto QT
+End
+
+Lbl QT
+Stop
+End</string>
 		</dict>
 	</array>
 	<key>device name</key>

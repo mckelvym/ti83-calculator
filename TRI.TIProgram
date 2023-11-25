@@ -10,7 +10,24 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>prgmZSPLASH:prgmZGRAPHLbl A2:ClrHomeDisp "1. VERTEX A":Disp "":Input "X: ",A:Input "Y: ",B:ClrHomeDisp "2. VERTEX B":Disp "":Input "X: ",C:Input "Y: ",D:ClrHomeDisp "3. VERTEX C":Disp "":Input "X: ",E:Input "Y: ",FLbl B2:ClrHomeMenu("MENU:","CALCULATE",A1,"NEW VERTICES",A2,"EXIT",B3)Lbl B3:ClrHome:StopLbl A1:ClrHome√((A-C)+(B-D))→X√((A-E)+(B-F))→Y√((C-E)+(D-F))→Z(X+Y+Z)/2→S√(S(S-X)(S-Y)(S-Z))→KOutput(1,1,"AB: "):Output(2,1,"AC: "):Output(3,1,"BC: "):Output(4,1,"P.: "):Output(5,1,"A.: ")Output(1,5,X):Output(2,5,Y):Output(3,5,Z):Output(4,5,(S*2)):Output(5,5,K)Output(1,12,"     "):Output(2,12,"     "):Output(3,12,"     "):Output(4,12,"     "):Output(5,12,"     "):Output(8,1,"PRESS ENTER...")Pause :Goto B2</string>
+			<string>prgmZSPLASH:prgmZGRAPH
+Lbl A2:ClrHome
+Disp "1. VERTEX A":Disp "":Input "X: ",A:Input "Y: ",B:ClrHome
+Disp "2. VERTEX B":Disp "":Input "X: ",C:Input "Y: ",D:ClrHome
+Disp "3. VERTEX C":Disp "":Input "X: ",E:Input "Y: ",F
+Lbl B2:ClrHome
+Menu("MENU:","CALCULATE",A1,"NEW VERTICES",A2,"EXIT",B3)
+Lbl B3:ClrHome:Stop
+Lbl A1:ClrHome
+√((A-C)+(B-D))→X
+√((A-E)+(B-F))→Y
+√((C-E)+(D-F))→Z
+(X+Y+Z)/2→S
+√(S(S-X)(S-Y)(S-Z))→K
+Output(1,1,"AB: "):Output(2,1,"AC: "):Output(3,1,"BC: "):Output(4,1,"P.: "):Output(5,1,"A.: ")
+Output(1,5,X):Output(2,5,Y):Output(3,5,Z):Output(4,5,(S*2)):Output(5,5,K)
+Output(1,12,"     "):Output(2,12,"     "):Output(3,12,"     "):Output(4,12,"     "):Output(5,12,"     "):Output(8,1,"PRESS ENTER...")
+Pause :Goto B2</string>
 		</dict>
 	</array>
 	<key>device name</key>

@@ -10,7 +10,16 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>Disp "((M nCr K)*"Disp "(N-M nCr n-K))/"Disp "(N nCr n)"Input "LOT: ",LInput "KNOWN DEFECTS: ",MInput "SAMPLE: ",NDisp "PROB OF DEFECT"Input "(K): ",KDisp (M nCr K)((L-M) nCr (N-K))/(L nCr N)</string>
+			<string>Disp "((M nCr K)*"
+Disp "(N-M nCr n-K))/"
+Disp "(N nCr n)"
+Input "LOT: ",L
+Input "KNOWN DEFECTS: ",M
+Input "SAMPLE: ",N
+Disp "PROB OF DEFECT"
+Input "(K): ",K
+Disp (M nCr K)((L-M) nCr (N-K))/(L nCr N)
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

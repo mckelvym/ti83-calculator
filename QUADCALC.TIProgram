@@ -10,7 +10,13 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>prgmZSPLASH:prgmZGRAPH:a+b:ClrHomeOutput(1,1,"QUADRATIC")Output(2,11,"SOLVER")Disp "":Disp "":Input "A= ",A:Disp "":Input "B= ",B:Disp "":Input "C= ",C:ClrHome(–B+√(B-4AC))/(2A)→X(–B-√(B-4AC))/(2A)→YDisp "X1: ":Disp X:Disp "":Disp "X2: ":Disp Y:Output(8,1,"PRESS ENTER..."):Pause :ClrHome</string>
+			<string>prgmZSPLASH:prgmZGRAPH:a+b:ClrHome
+Output(1,1,"QUADRATIC")
+Output(2,11,"SOLVER")
+Disp "":Disp "":Input "A= ",A:Disp "":Input "B= ",B:Disp "":Input "C= ",C:ClrHome
+(–B+√(B-4AC))/(2A)→X
+(–B-√(B-4AC))/(2A)→Y
+Disp "X1: ":Disp X:Disp "":Disp "X2: ":Disp Y:Output(8,1,"PRESS ENTER..."):Pause :ClrHome</string>
 		</dict>
 	</array>
 	<key>device name</key>

@@ -10,7 +10,14 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>Disp "NEG-BINOM PDF"Disp "(N-1  nCr K-1)*"Disp "P^K * Q^(N-K)"Input "TRIALS: ",XInput "PROB: ",YInput "SUCC: ",ZDisp ((X-1) nCr (Z-1))*Y^Z*(1-Y)^(X-Z)</string>
+			<string>Disp "NEG-BINOM PDF"
+Disp "(N-1  nCr K-1)*"
+Disp "P^K * Q^(N-K)"
+Input "TRIALS: ",X
+Input "PROB: ",Y
+Input "SUCC: ",Z
+Disp ((X-1) nCr (Z-1))*Y^Z*(1-Y)^(X-Z)
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

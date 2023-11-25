@@ -10,7 +10,83 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>Lbl 0Menu("Mult serv Q","Calc",1,"Equations",2,"P(Tq&gt;t)",3,"P(T&gt;t)",4,"Quit",99)Lbl 1ClrHomeDisp "Arrival rate"Input "Lambda? ",LDisp "Service rate"Input "Mu? ",MInput "Servers? ",SInput "If Pj, j? ",I(L/(S*M))→RDisp "rho=",RPause ClrHome0→PFor(J,0,S-1,1)V+((S*R)^J)/(J!)→PEnd(V+((S^S*R^S)/(S!*(1-R))))→PDisp "P(idle)=",P((S*R)^S*P)/(S!*(1-R))→BDisp "P(busy)=",BIf I≤SThen((SR)^I/(I!))P→VElse(((SR)^I)/(S^(I-S)S!))*P→VEndDisp "Pj=",VOutput(5,5,"P =")Output(5,6,I)Pause ClrHome(R*B)/(1-R)→NN/L→WW+(1/M)→SL*S→QDisp "E[length(Q)]"Disp "Lq=",NDisp "E[wait(Q)]"Disp "Wq=",WPause ClrHomeDisp "E[time(system)]"Disp "W=",SDisp "E[num(system)]"Disp "L=",QPause Goto 0Lbl 2ClrHomeDisp "Lambda-&gt;L","Mu-&gt;M","Rho-&gt;R"Pause ClrHomeDisp "P0=(A+B)","A=sum(j=0,S-1,..","(SR)^j/j!)","B=(S^S*R^S)/..","(S!(1-R))"Pause ClrHomeDisp "For j≤S, Pj=","(SR)^jP0/j!","For j≥S, Pj=","(SR)^jP0/","(S^(j-S)S!)"Pause ClrHomeDisp "P(j≥S)=","(SR)^S*P0)/","(S!(1-R))","Lq=RP(j≥S)/(1-R)","Wq=Lq/Lambda","W=Wq+1/Mu","L=Lambda*W"Pause Goto 0Lbl 3prgmTIMEQPause Goto 0Lbl 4prgmTIMESYSPause Goto 0Lbl 99Stop</string>
+			<string>Lbl 0
+Menu("Mult serv Q","Calc",1,"Equations",2,"P(Tq&gt;t)",3,"P(T&gt;t)",4,"Quit",99)
+Lbl 1
+ClrHome
+Disp "Arrival rate"
+Input "Lambda? ",L
+Disp "Service rate"
+Input "Mu? ",M
+Input "Servers? ",S
+Input "If Pj, j? ",I
+(L/(S*M))→R
+Disp "rho=",R
+Pause 
+ClrHome
+0→P
+For(J,0,S-1,1)
+V+((S*R)^J)/(J!)→P
+End
+(V+((S^S*R^S)/(S!*(1-R))))→P
+Disp "P(idle)=",P
+((S*R)^S*P)/(S!*(1-R))→B
+Disp "P(busy)=",B
+If I≤S
+Then
+((SR)^I/(I!))P→V
+Else
+(((SR)^I)/(S^(I-S)S!))*P→V
+End
+Disp "Pj=",V
+Output(5,5,"P =")
+Output(5,6,I)
+Pause 
+ClrHome
+(R*B)/(1-R)→N
+N/L→W
+W+(1/M)→S
+L*S→Q
+Disp "E[length(Q)]"
+Disp "Lq=",N
+Disp "E[wait(Q)]"
+Disp "Wq=",W
+Pause 
+ClrHome
+Disp "E[time(system)]"
+Disp "W=",S
+Disp "E[num(system)]"
+Disp "L=",Q
+Pause 
+Goto 0
+
+Lbl 2
+ClrHome
+Disp "Lambda-&gt;L","Mu-&gt;M","Rho-&gt;R"
+Pause 
+ClrHome
+Disp "P0=(A+B)","A=sum(j=0,S-1,..","(SR)^j/j!)","B=(S^S*R^S)/..","(S!(1-R))"
+Pause 
+ClrHome
+Disp "For j≤S, Pj=","(SR)^jP0/j!","For j≥S, Pj=","(SR)^jP0/","(S^(j-S)S!)"
+Pause 
+ClrHome
+Disp "P(j≥S)=","(SR)^S*P0)/","(S!(1-R))","Lq=RP(j≥S)/(1-R)","Wq=Lq/Lambda","W=Wq+1/Mu","L=Lambda*W"
+Pause 
+Goto 0
+
+Lbl 3
+prgmTIMEQ
+Pause 
+Goto 0
+
+Lbl 4
+prgmTIMESYS
+Pause 
+Goto 0
+
+Lbl 99
+Stop</string>
 		</dict>
 	</array>
 	<key>device name</key>

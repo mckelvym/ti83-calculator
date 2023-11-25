@@ -10,7 +10,15 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>0→KWhile K≠105getKey→KWhile K=0getKey→KEndDisp KEnd</string>
+			<string>0→K
+While K≠105
+
+getKey→K
+While K=0
+getKey→K
+End
+Disp K
+End</string>
 		</dict>
 	</array>
 	<key>device name</key>

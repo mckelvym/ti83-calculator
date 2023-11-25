@@ -10,7 +10,110 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>prgmZSPLASHDisp "SYNTHETIC"Disp "DIVISION"Disp ""Disp "How Many Terms?"Disp "(2-5 Terms,"Disp "     0 to EXIT)"Input VIf V=0ThenEndIf V=2ThenClrHomePrompt A,BDisp ""Prompt RA*R→TB+T→BClrHomeOutput(1,1,"q(x):")Output(2,1,"A=")Output(2,8,A)Output(4,1,"r(x):")Output(4,8,B)EndIf V=3ThenClrHomePrompt A,B,CDisp ""Prompt RA*R→TB+T→BB*R→TC+T→CClrHomeOutput(1,1,"q(x):")Output(2,1,"A=")Output(2,8,A)Output(3,1,"B=")Output(3,8,B)Output(5,1,"r(x):")Output(5,8,C)DelVar CEndIf V=4ThenClrHomePrompt A,B,C,DDisp ""Prompt RA*R→TB+T→BB*R→TC+T→CC*R→TD+T→DClrHomeOutput(1,1,"q(x):")Output(2,1,"A=")Output(2,8,A)Output(3,1,"B=")Output(3,8,B)Output(4,1,"C=")Output(4,8,C)Output(6,1,"r(x):")Output(6,8,D)DelVar DEndIf V=5ThenClrHomePrompt A,B,C,D,EDisp ""Prompt RA*R→TB+T→BB*R→TC+T→CC*R→TD+T→DD*R→TE+T→EClrHomeOutput(1,1,"q(x):")Output(2,1,"A=")Output(2,8,A)Output(3,1,"B=")Output(3,8,B)Output(4,1,"C=")Output(4,8,C)Output(5,1,"D=")Output(5,8,D)Output(7,1,"r(x):")Output(7,8,E)DelVar EEndDelVar ADelVar BDelVar RDelVar TStop</string>
+			<string>prgmZSPLASH
+Disp "SYNTHETIC"
+Disp "DIVISION"
+Disp ""
+Disp "How Many Terms?"
+Disp "(2-5 Terms,"
+Disp "     0 to EXIT)"
+Input V
+If V=0
+Then
+End
+If V=2
+Then
+ClrHome
+Prompt A,B
+Disp ""
+Prompt R
+A*R→T
+B+T→B
+ClrHome
+Output(1,1,"q(x):")
+Output(2,1,"A=")
+Output(2,8,A)
+Output(4,1,"r(x):")
+Output(4,8,B)
+End
+If V=3
+Then
+ClrHome
+Prompt A,B,C
+Disp ""
+Prompt R
+A*R→T
+B+T→B
+B*R→T
+C+T→C
+ClrHome
+Output(1,1,"q(x):")
+Output(2,1,"A=")
+Output(2,8,A)
+Output(3,1,"B=")
+Output(3,8,B)
+Output(5,1,"r(x):")
+Output(5,8,C)
+DelVar C
+End
+If V=4
+Then
+ClrHome
+Prompt A,B,C,D
+Disp ""
+Prompt R
+A*R→T
+B+T→B
+B*R→T
+C+T→C
+C*R→T
+D+T→D
+ClrHome
+Output(1,1,"q(x):")
+Output(2,1,"A=")
+Output(2,8,A)
+Output(3,1,"B=")
+Output(3,8,B)
+Output(4,1,"C=")
+Output(4,8,C)
+Output(6,1,"r(x):")
+Output(6,8,D)
+DelVar D
+End
+If V=5
+Then
+ClrHome
+Prompt A,B,C,D,E
+Disp ""
+Prompt R
+A*R→T
+B+T→B
+B*R→T
+C+T→C
+C*R→T
+D+T→D
+D*R→T
+E+T→E
+ClrHome
+Output(1,1,"q(x):")
+Output(2,1,"A=")
+Output(2,8,A)
+Output(3,1,"B=")
+Output(3,8,B)
+Output(4,1,"C=")
+Output(4,8,C)
+Output(5,1,"D=")
+Output(5,8,D)
+Output(7,1,"r(x):")
+Output(7,8,E)
+DelVar E
+End
+DelVar A
+DelVar B
+DelVar R
+DelVar T
+Stop
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

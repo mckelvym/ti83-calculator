@@ -10,7 +10,21 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrDrawLine(–7,–6,7,–6)Line(–7,–8.5,7,–8.5)Line(7,–6,7,–8.5)Line(–7,–6,–7,–8.5)Text(43,14,"LOADING...")Text(51,82,"100")Text(51,10,"0")For(X,–7,7,.05)Line(X,–6,X,–8.5)EndText(51,31,"COMPLETE!")Text(25,28,"PRESS ENTER")Pause ClrHome</string>
+			<string>ClrDraw
+Line(–7,–6,7,–6)
+Line(–7,–8.5,7,–8.5)
+Line(7,–6,7,–8.5)
+Line(–7,–6,–7,–8.5)
+Text(43,14,"LOADING...")
+Text(51,82,"100")
+Text(51,10,"0")
+For(X,–7,7,.05)
+Line(X,–6,X,–8.5)
+End
+Text(51,31,"COMPLETE!")
+Text(25,28,"PRESS ENTER")
+Pause 
+ClrHome</string>
 		</dict>
 	</array>
 	<key>device name</key>

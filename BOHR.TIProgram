@@ -10,7 +10,14 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomePrompt FClrHomePrompt IClrHomeDisp "Solution: ",2.179*10^–18((1/I^2)-1/F^2)Stop</string>
+			<string>ClrHome
+Prompt F
+ClrHome
+Prompt I
+ClrHome
+Disp "Solution: ",2.179*10^–18((1/I^2)-1/F^2)
+Stop
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

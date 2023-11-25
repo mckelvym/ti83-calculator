@@ -10,7 +10,56 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeIf L₆(1)=L₅(1) and L₆(2)=L₅(2) and L₆(3)=L₅(3) and L₆(4)=L₅(4):ThenLbl Z1Menu("Miles Per Gallon","Calc MPG",A1,"Last MPG",A2,"Total MPG",A3,"Exit",Z2)Lbl A1:ClrHomeInput "Miles: ",XInput "Gallons: ",YX→L₆(1)Y→L₆(2)ClrHomeDisp "This Avg-&gt;"Disp L₆(1)/L₆(2)Disp ""Disp "Total-&gt;"L₆(1)+L₆(3)→L₆(3)L₆(2)+L₆(4)→L₆(4)L₆(3)→PL₆(4)→QDisp L₆(3)/L₆(4)Pause :Goto Z1Lbl A2:ClrHomeDisp "Last-&gt;"Disp L₆(1)/L₆(2)Pause :Goto Z1Lbl A3:ClrHomeDisp "Total-&gt;"Disp L₆(3)/L₆(4)Pause :Goto Z1Lbl Z2:L₆→L₅:ClrHome:StopElseDisp "ERROR - Lists."Disp ""Disp "L₅:"Disp L₅Disp "L₆:"Disp L₆Output(8,1,"Press enter..."Pause Menu("Restore:","L₅",B1,"L₆",B2,"Exit",Z2)Lbl B1L₅→L₆Goto Z2Lbl B2L₆→L₅Goto Z2End</string>
+			<string>ClrHome
+If L₆(1)=L₅(1) and L₆(2)=L₅(2) and L₆(3)=L₅(3) and L₆(4)=L₅(4):Then
+Lbl Z1
+Menu("Miles Per Gallon","Calc MPG",A1,"Last MPG",A2,"Total MPG",A3,"Exit",Z2)
+
+Lbl A1:ClrHome
+Input "Miles: ",X
+Input "Gallons: ",Y
+X→L₆(1)
+Y→L₆(2)
+ClrHome
+Disp "This Avg-&gt;"
+Disp L₆(1)/L₆(2)
+Disp ""
+Disp "Total-&gt;"
+L₆(1)+L₆(3)→L₆(3)
+L₆(2)+L₆(4)→L₆(4)
+L₆(3)→P
+L₆(4)→Q
+Disp L₆(3)/L₆(4)
+Pause :Goto Z1
+
+Lbl A2:ClrHome
+Disp "Last-&gt;"
+Disp L₆(1)/L₆(2)
+Pause :Goto Z1
+
+Lbl A3:ClrHome
+Disp "Total-&gt;"
+Disp L₆(3)/L₆(4)
+Pause :Goto Z1
+
+Lbl Z2:L₆→L₅:ClrHome:Stop
+Else
+Disp "ERROR - Lists."
+Disp ""
+Disp "L₅:"
+Disp L₅
+Disp "L₆:"
+Disp L₆
+Output(8,1,"Press enter..."
+Pause 
+Menu("Restore:","L₅",B1,"L₆",B2,"Exit",Z2)
+Lbl B1
+L₅→L₆
+Goto Z2
+Lbl B2
+L₆→L₅
+Goto Z2
+End</string>
 		</dict>
 	</array>
 	<key>device name</key>

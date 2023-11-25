@@ -10,7 +10,36 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeDisp "Test Averager"Disp ""Disp "-1 To Quit"Input " 0 To Continue ",QIf Q=0Then0→A0→B0→CWhile A≠–1ClrHomeInput "Score?   ",AA+B→BC+1→CEndB+1→BC-1→CClrHomeDisp "Tests Taken:"Disp CDisp "Total Points:"Disp BDisp "Test Average:"B/C→Around(A,2)→ADisp AEndStop</string>
+			<string>ClrHome
+Disp "Test Averager"
+Disp ""
+Disp "-1 To Quit"
+Input " 0 To Continue ",Q
+If Q=0
+Then
+0→A
+0→B
+0→C
+While A≠–1
+ClrHome
+Input "Score?   ",A
+A+B→B
+C+1→C
+End
+B+1→B
+C-1→C
+ClrHome
+Disp "Tests Taken:"
+Disp C
+Disp "Total Points:"
+Disp B
+Disp "Test Average:"
+B/C→A
+round(A,2)→A
+Disp A
+End
+Stop
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

@@ -10,7 +10,17 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeDisp "Time in Q"Input "Servers? ",SInput "Lambda? ",LInput "Mu? ",ML/(SM)→RInput "P(j≥S)? ",PInput "t? ",TDisp "P(Tq&gt;t)=","P(j≥S)*","^(–SM(1-R)t)(P*^(–S*M*(1-R)*T))→VDisp V</string>
+			<string>ClrHome
+Disp "Time in Q"
+Input "Servers? ",S
+Input "Lambda? ",L
+Input "Mu? ",M
+L/(SM)→R
+Input "P(j≥S)? ",P
+Input "t? ",T
+Disp "P(Tq&gt;t)=","P(j≥S)*","^(–SM(1-R)t)
+(P*^(–S*M*(1-R)*T))→V
+Disp V</string>
 		</dict>
 	</array>
 	<key>device name</key>

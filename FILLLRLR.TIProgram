@@ -10,7 +10,20 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeFor(Y,1,16,1)For(X,8,1,–1)Output(X,Y,round(rand ,0))rand →θEndEndFor(A,1,16,1)For(B,8,1,–1)Output(B,A," ")rand →θrand →θEndEnd</string>
+			<string>ClrHome
+For(Y,1,16,1)
+For(X,8,1,–1)
+Output(X,Y,round(rand ,0))
+rand →θ
+End
+End
+For(A,1,16,1)
+For(B,8,1,–1)
+Output(B,A," ")
+rand →θ
+rand →θ
+End
+End</string>
 		</dict>
 	</array>
 	<key>device name</key>

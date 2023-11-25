@@ -10,7 +10,13 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>prgmZSPLASH:prgmZGRAPH:Fix 3Lbl A1:ClrHomeMenu("LINE STUFF:","2 END PTS",A2,"1 MID+1 END PT",A3,"EXIT",B1)Lbl B1:ClrHome:prgmZGRAPH:StopLbl A2:Input "PT 1,X: ",A:Input "PT 1,Y: ",B:Disp "":Input "PT 2,X: ",C:Input "PT 2,Y: ",D:ClrHome.:Output(1,1,"MPT X: "):Output(2,1,"MPT Y: "):Output(1,8,((A+C)/2)):Output(2,8,((B+D)/2))Lbl C1:D-B→Y:C-A→X:Output(4,1,"SLOPE: "):If Y&lt;0:Then:If X&lt;0:Then:abs(Y)→Y:abs(X)→X:End:End:If X=Y:Then:1→X:1→Y:End:abs(X)→θ:abs(Y)→Z:If θ&gt;X:Then:1→K:Else:0→K:End:If Z&gt;Y:Then:1→J:Else:0→J:End:If θ=Z:Then:If θ&gt;X:Then:–1→Y:1→X:End:If Z&gt;Y:Then:–1→Y:1→X:End:End:Output(4,(8-J),Y):If X≠1:Then:Output(5,7,"---"):Output(6,(8-K),X):Output(8,1,"*MAY SIMPLIFY"):End:Pause :Goto A1Lbl A3:ClrHome:Input "MPT X: ",C:Input "MPT Y: ",D:Disp "":Input "PT X: ",A:Input "PT Y: ",B:2*C-A→A:2*D-B→B:ClrHome:Output(1,1,"PT 2,X: "):Output(2,1,"PT 2,Y: "):Output(1,9,A):Output(2,9,B):Goto C1</string>
+			<string>prgmZSPLASH:prgmZGRAPH:Fix 3
+Lbl A1:ClrHome
+Menu("LINE STUFF:","2 END PTS",A2,"1 MID+1 END PT",A3,"EXIT",B1)
+Lbl B1:ClrHome:prgmZGRAPH:Stop
+Lbl A2:Input "PT 1,X: ",A:Input "PT 1,Y: ",B:Disp "":Input "PT 2,X: ",C:Input "PT 2,Y: ",D:ClrHome.:Output(1,1,"MPT X: "):Output(2,1,"MPT Y: "):Output(1,8,((A+C)/2)):Output(2,8,((B+D)/2))
+Lbl C1:D-B→Y:C-A→X:Output(4,1,"SLOPE: "):If Y&lt;0:Then:If X&lt;0:Then:abs(Y)→Y:abs(X)→X:End:End:If X=Y:Then:1→X:1→Y:End:abs(X)→θ:abs(Y)→Z:If θ&gt;X:Then:1→K:Else:0→K:End:If Z&gt;Y:Then:1→J:Else:0→J:End:If θ=Z:Then:If θ&gt;X:Then:–1→Y:1→X:End:If Z&gt;Y:Then:–1→Y:1→X:End:End:Output(4,(8-J),Y):If X≠1:Then:Output(5,7,"---"):Output(6,(8-K),X):Output(8,1,"*MAY SIMPLIFY"):End:Pause :Goto A1
+Lbl A3:ClrHome:Input "MPT X: ",C:Input "MPT Y: ",D:Disp "":Input "PT X: ",A:Input "PT Y: ",B:2*C-A→A:2*D-B→B:ClrHome:Output(1,1,"PT 2,X: "):Output(2,1,"PT 2,Y: "):Output(1,9,A):Output(2,9,B):Goto C1</string>
 		</dict>
 	</array>
 	<key>device name</key>

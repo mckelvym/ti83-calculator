@@ -10,7 +10,10 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrDraw:ClrHome:FnOff :AxesOffText(57,0,"(c) Markus McKelvy 2003")Text(35,27,"Prss Enter")Pause :prgmZGRAPH:FnOn :ClrDraw:ClrHome</string>
+			<string>ClrDraw:ClrHome:FnOff :AxesOff
+Text(57,0,"(c) Markus McKelvy 2003")
+Text(35,27,"Prss Enter")
+Pause :prgmZGRAPH:FnOn :ClrDraw:ClrHome</string>
 		</dict>
 	</array>
 	<key>device name</key>

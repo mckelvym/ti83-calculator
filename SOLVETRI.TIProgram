@@ -10,7 +10,80 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeDegreeMenu("CHOICE?","ASA",A1,"QUIT",A6)Lbl A1Disp "SIDE A,B,OR C?"Input ": ",Str1Disp ""Disp "LENGTH OF SIDE= Input ": ",ZIf (Str1="A")ThenZ→DDisp ""Input "&lt;B=",BInput "&lt;C=",C180-B-C→AD*sin(C)/sin(A)→FD*sin(B)/sin(A)→EEndIf (Str1="B")ThenZ→EDisp ""Input "&lt;A=",AInput "&lt;C=",C180-A-C→BB*sin(A)/sin(B)→DB*sin(C)/sin(B)→FEndIf (Str1="C")ThenZ→FDisp ""Input "&lt;B=",BInput "&lt;A=",A180-B-A→CF*sin(A)/sin(C)→DF*sin(B)/sin(C)→EEndGoto A5Lbl A5ClrHomeOutput(1,1,"SOLVED TRIANGLE"Output(3,1,"SIDE A=")Output(4,1,"SIDE B=")Output(5,1,"SIDE C=")Output(6,1,"&lt;A=")Output(7,1,"&lt;B=")Output(8,1,"&lt;C=")round(D,4)→Dround(E,4)→Eround(F,4)→Fround(A,4)→Around(B,4)→Bround(C,4)→COutput(3,9,D)Output(4,9,E)Output(5,9,F)Output(6,9,A)Output(7,9,B)Output(8,9,C)Goto A6Lbl A6Stop</string>
+			<string>ClrHome
+Degree
+Menu("CHOICE?","ASA",A1,"QUIT",A6)
+
+Lbl A1
+Disp "SIDE A,B,OR C?"
+Input ": ",Str1
+Disp ""
+Disp "LENGTH OF SIDE= 
+Input ": ",Z
+
+If (Str1="A")
+Then
+Z→D
+Disp ""
+Input "&lt;B=",B
+Input "&lt;C=",C
+180-B-C→A
+D*sin(C)/sin(A)→F
+D*sin(B)/sin(A)→E
+End
+
+If (Str1="B")
+Then
+Z→E
+Disp ""
+Input "&lt;A=",A
+Input "&lt;C=",C
+180-A-C→B
+B*sin(A)/sin(B)→D
+B*sin(C)/sin(B)→F
+End
+
+If (Str1="C")
+Then
+Z→F
+Disp ""
+Input "&lt;B=",B
+Input "&lt;A=",A
+180-B-A→C
+F*sin(A)/sin(C)→D
+F*sin(B)/sin(C)→E
+End
+Goto A5
+
+
+
+Lbl A5
+ClrHome
+Output(1,1,"SOLVED TRIANGLE"
+Output(3,1,"SIDE A=")
+Output(4,1,"SIDE B=")
+Output(5,1,"SIDE C=")
+Output(6,1,"&lt;A=")
+Output(7,1,"&lt;B=")
+Output(8,1,"&lt;C=")
+
+round(D,4)→D
+round(E,4)→E
+round(F,4)→F
+round(A,4)→A
+round(B,4)→B
+round(C,4)→C
+
+Output(3,9,D)
+Output(4,9,E)
+Output(5,9,F)
+Output(6,9,A)
+Output(7,9,B)
+Output(8,9,C)
+Goto A6
+
+Lbl A6
+Stop</string>
 		</dict>
 	</array>
 	<key>device name</key>

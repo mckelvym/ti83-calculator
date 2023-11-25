@@ -10,7 +10,19 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrDrawLine(–7,–6,7,–6)Line(–7,–7,7,–7)Line(7,–6,7,–7)Line(–7,–6,–7,–7)Text(43,14,"QUITTING...")Text(57,0,"MARK MCKELVY 2003")For(X,–7,7,.2)For(θ,–6,–7,–.45)Pt-On(X,θ)EndEndClrHome</string>
+			<string>ClrDraw
+Line(–7,–6,7,–6)
+Line(–7,–7,7,–7)
+Line(7,–6,7,–7)
+Line(–7,–6,–7,–7)
+Text(43,14,"QUITTING...")
+Text(57,0,"MARK MCKELVY 2003")
+For(X,–7,7,.2)
+For(θ,–6,–7,–.45)
+Pt-On(X,θ)
+End
+End
+ClrHome</string>
 		</dict>
 	</array>
 	<key>device name</key>

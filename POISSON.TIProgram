@@ -10,7 +10,14 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>Disp "(L^X*^(–L))/(X!)"Disp ""Disp "(Expected)"Input "Lambda: ",LDisp "(Observed)"Input "X: ",XDisp "=",(L^X*^(–L))/(X!)</string>
+			<string>Disp "(L^X*^(–L))/(X!)"
+Disp ""
+Disp "(Expected)"
+Input "Lambda: ",L
+Disp "(Observed)"
+Input "X: ",X
+Disp "=",(L^X*^(–L))/(X!)
+</string>
 		</dict>
 	</array>
 	<key>device name</key>

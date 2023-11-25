@@ -10,7 +10,51 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeFor(X,0,2,1)For(A,1,16,1)getKey→ZIf Z=105ThenGoto A1EndFor(C,1,8,1)randInt(1,16)→BOutput(C,B,randInt(0,1))EndEndEndFor(C,0,100,1)getKey→ZIf Z=105ThenGoto A1EndrandInt(1,16)→ArandInt(1,16)→BrandInt(1,16)→FrandInt(1,16)→DFor(E,1,8,1)Output(E,A,randInt(0,1))Output(E,B,randInt(0,1))Output(E,F,randInt(0,1))Output(E,D,randInt(0,1))EndIf C=1ThenFor(M,16,1,–1)Output(5,M,"   IT HAS YOU   ")For(N,0,100,1)EndEndFor(W,0,550,1)EndEndEndLbl A1ClrHomeStop</string>
+			<string>ClrHome
+For(X,0,2,1)
+For(A,1,16,1)
+getKey→Z
+If Z=105
+Then
+Goto A1
+End
+For(C,1,8,1)
+randInt(1,16)→B
+Output(C,B,randInt(0,1))
+End
+End
+End
+For(C,0,100,1)
+getKey→Z
+If Z=105
+Then
+Goto A1
+End
+randInt(1,16)→A
+randInt(1,16)→B
+randInt(1,16)→F
+randInt(1,16)→D
+For(E,1,8,1)
+Output(E,A,randInt(0,1))
+Output(E,B,randInt(0,1))
+Output(E,F,randInt(0,1))
+Output(E,D,randInt(0,1))
+End
+If C=1
+Then
+For(M,16,1,–1)
+Output(5,M,"   IT HAS YOU   ")
+For(N,0,100,1)
+End
+End
+For(W,0,550,1)
+End
+End
+End
+
+Lbl A1
+ClrHome
+Stop</string>
 		</dict>
 	</array>
 	<key>device name</key>

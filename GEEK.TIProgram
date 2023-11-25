@@ -10,7 +10,9 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrHomeOutput(3,5,"* g33K *")Pause :ClrHome</string>
+			<string>ClrHome
+Output(3,5,"* g33K *")
+Pause :ClrHome</string>
 		</dict>
 	</array>
 	<key>device name</key>

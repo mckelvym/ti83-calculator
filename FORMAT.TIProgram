@@ -10,7 +10,50 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>ClrDraw:FnOff :AxesOffText(55,0,"(c) Markus 2003")Text(50,70,"C:")Pxl-On(51,76)Pxl-On(52,76)Pxl-On(53,77)Pxl-On(54,78)Pxl-On(55,78)Text(50,80,"*.*")For(Y,0,56,4)If Y≤52:ThenText(Y,32,"––––––––     ")Text(Y+4,32,"Formating")EndFor(X,0,88,4)Pxl-On(Y,X)Pxl-On(Y,X+1)Pxl-On(Y,X+2)Pxl-On(Y,X+3)Pxl-On(Y+1,X)Pxl-On(Y+1,X+1)Pxl-On(Y+1,X+2)Pxl-On(Y+1,X+3)Pxl-On(Y+2,X)Pxl-On(Y+2,X+1)Pxl-On(Y+2,X+2)Pxl-On(Y+2,X+3)Pxl-On(Y+3,X)Pxl-On(Y+3,X+1)Pxl-On(Y+3,X+2)Pxl-On(Y+3,X+3)EndEndClrDrawText(5,0,"Don")Text(55,0,"Press Clear")0→KWhile K≠45getKey→KEndClrHome:FnOn :AxesOn</string>
+			<string>ClrDraw:FnOff :AxesOff
+Text(55,0,"(c) Markus 2003")
+
+Text(50,70,"C:")
+Pxl-On(51,76)
+Pxl-On(52,76)
+Pxl-On(53,77)
+Pxl-On(54,78)
+Pxl-On(55,78)
+Text(50,80,"*.*")
+
+For(Y,0,56,4)
+If Y≤52:Then
+Text(Y,32,"––––––––     ")
+Text(Y+4,32,"Formating")
+End
+For(X,0,88,4)
+Pxl-On(Y,X)
+Pxl-On(Y,X+1)
+Pxl-On(Y,X+2)
+Pxl-On(Y,X+3)
+Pxl-On(Y+1,X)
+Pxl-On(Y+1,X+1)
+Pxl-On(Y+1,X+2)
+Pxl-On(Y+1,X+3)
+Pxl-On(Y+2,X)
+Pxl-On(Y+2,X+1)
+Pxl-On(Y+2,X+2)
+Pxl-On(Y+2,X+3)
+Pxl-On(Y+3,X)
+Pxl-On(Y+3,X+1)
+Pxl-On(Y+3,X+2)
+Pxl-On(Y+3,X+3)
+
+End
+End
+ClrDraw
+Text(5,0,"Don")
+Text(55,0,"Press Clear")
+0→K
+While K≠45
+getKey→K
+End
+ClrHome:FnOn :AxesOn</string>
 		</dict>
 	</array>
 	<key>device name</key>

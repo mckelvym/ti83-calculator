@@ -10,7 +10,30 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>1→VFor(X,1,12,1)(1^X)/X!→AV+A→VEndDisp " approximated"Disp "12 iterations"Disp VPause 0→E1→T1→PFor(X,3,6001,2)If T=0:Then1→TX→AElse0→T–X→AEndP→QP+(A)→PDisp (2(P+Q)End</string>
+			<string>1→V
+For(X,1,12,1)
+(1^X)/X!→A
+V+A→V
+End
+Disp " approximated"
+Disp "12 iterations"
+Disp V
+Pause 
+0→E
+1→T
+1→P
+For(X,3,6001,2)
+If T=0:Then
+1→T
+X→A
+Else
+0→T
+–X→A
+End
+P→Q
+P+(A)→P
+Disp (2(P+Q)
+End</string>
 		</dict>
 	</array>
 	<key>device name</key>

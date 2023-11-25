@@ -10,7 +10,222 @@
 			<key>row</key>
 			<integer>1</integer>
 			<key>stringValue</key>
-			<string>prgmZSPLASH1→A760→M29.92→I14.7→S1.015→PMenu("PRESSURE CONVERT","ATM",A1,"MM HG",A2,"IN HG",A3,"PSI",A4,"PA",A5,"EXIT",A7)Lbl A1ClrHomeMenu("ATM TO ...","MM HG",B1,"IN HG",B2,"PSI",B3,"PA",B4,"EXIT",A7)Lbl A2ClrHomeMenu("MM HG TO ...","ATM",C1,"IN HG",C2,"PSI",C3,"PA",C4,"EXIT",A7)Lbl A3ClrHomeMenu("IN HG TO ...","ATM",D1,"MM HG",D2,"PSI",D3,"PA",D4,"EXIT",A7)Lbl A4ClrHomeMenu("PSI TO ...","ATM",E1,"MM HG",E2,"IN HG",E3,"PA",E4,"EXIT",A7)Lbl A5ClrHomeMenu("PA TO ...","ATM",F1,"MM HG",F2,"IN HG",F3,"PSI",F4,"EXIT",A7)Lbl A6Pause ClrHomeStopLbl A7ClrHomeStopLbl B1ClrHomeInput "ATM? ",X(X*M)/A→XClrHomeDisp "MM HG:"Disp XGoto A6Lbl B2ClrHomeInput "ATM? ",X(X*I)/A→XClrHomeDisp "IN HG:"Disp XGoto A6Lbl B3ClrHomeInput "ATM? ",X(X*S)/A→XClrHomeDisp "PSI:"Disp XGoto A6Lbl B4ClrHomeInput "ATM? ",X(X+P)/A→XClrHomeDisp "PA:"Disp XGoto A6Lbl C1ClrHomeInput "MM HG? ",X(X*A)/M→XClrHomeDisp "ATM:"Disp XGoto A6Lbl C2ClrHomeInput "MM HG? ",X(X*I)/M→XClrHomeDisp "IN HG:"Disp XGoto A6Lbl C3ClrHomeInput "MM HG? ",X(X*S)/M→XClrHomeDisp "PSI:"Disp XGoto A6Lbl C4ClrHomeInput "MM HG? ",X(X*P)/M→XClrHomeDisp "PA:"Disp XGoto A6Lbl D1ClrHomeInput "IN HG? ",X(X*A)/I→XClrHomeDisp "ATM:"Disp XGoto A6Lbl D2ClrHomeInput "IN HG? ",X(X*M)/I→XClrHomeDisp "MM HG:"Disp XGoto A6Lbl D3ClrHomeInput "IN HG? ",X(X*S)/I→XClrHomeDisp "PSI:"Disp XGoto A6Lbl D4ClrHomeInput "IN HG? ",X(X*P)/I→XClrHomeDisp "PA:"Disp XGoto A6Lbl E1ClrHomeInput "PSI? ",X(X*A)/S→XClrHomeDisp "ATM:"Disp XGoto A6Lbl E2ClrHomeInput "PSI? ",X(X*M)/S→XClrHomeDisp "MM HG:"Disp XGoto A6Lbl E3ClrHomeInput "PSI? ",X(X*I)/S→XClrHomeDisp "IN HG:"Disp XGoto A6Lbl E4ClrHomeInput "PSI? ",X(X*P)/S→XClrHomeDisp "PA:"Disp XGoto A6Lbl F1ClrHomeInput "PA? ",X(X*A)/P→XClrHomeDisp "ATM:"Disp XGoto A6Lbl F2ClrHomeInput "PA? ",X(X*M)/P→XClrHomeDisp "MM HG:"Disp XGoto A6Lbl F3ClrHomeInput "PA? ",X(X*I)/P→XClrHomeDisp "IN HG:"Disp XGoto A6Lbl F4ClrHomeInput "PA? ",X(X*S)/P→XClrHomeDisp "PSI:"Disp XGoto A6</string>
+			<string>prgmZSPLASH
+1→A
+760→M
+29.92→I
+14.7→S
+1.015→P
+Menu("PRESSURE CONVERT","ATM",A1,"MM HG",A2,"IN HG",A3,"PSI",A4,"PA",A5,"EXIT",A7)
+
+Lbl A1
+ClrHome
+Menu("ATM TO ...","MM HG",B1,"IN HG",B2,"PSI",B3,"PA",B4,"EXIT",A7)
+
+Lbl A2
+ClrHome
+Menu("MM HG TO ...","ATM",C1,"IN HG",C2,"PSI",C3,"PA",C4,"EXIT",A7)
+
+Lbl A3
+ClrHome
+Menu("IN HG TO ...","ATM",D1,"MM HG",D2,"PSI",D3,"PA",D4,"EXIT",A7)
+
+Lbl A4
+ClrHome
+Menu("PSI TO ...","ATM",E1,"MM HG",E2,"IN HG",E3,"PA",E4,"EXIT",A7)
+
+Lbl A5
+ClrHome
+Menu("PA TO ...","ATM",F1,"MM HG",F2,"IN HG",F3,"PSI",F4,"EXIT",A7)
+
+Lbl A6
+Pause 
+ClrHome
+Stop
+
+Lbl A7
+ClrHome
+Stop
+
+Lbl B1
+ClrHome
+Input "ATM? ",X
+(X*M)/A→X
+ClrHome
+Disp "MM HG:"
+Disp X
+Goto A6
+
+Lbl B2
+ClrHome
+Input "ATM? ",X
+(X*I)/A→X
+ClrHome
+Disp "IN HG:"
+Disp X
+Goto A6
+
+Lbl B3
+ClrHome
+Input "ATM? ",X
+(X*S)/A→X
+ClrHome
+Disp "PSI:"
+Disp X
+Goto A6
+
+Lbl B4
+ClrHome
+Input "ATM? ",X
+(X+P)/A→X
+ClrHome
+Disp "PA:"
+Disp X
+Goto A6
+
+Lbl C1
+ClrHome
+Input "MM HG? ",X
+(X*A)/M→X
+ClrHome
+Disp "ATM:"
+Disp X
+Goto A6
+
+Lbl C2
+ClrHome
+Input "MM HG? ",X
+(X*I)/M→X
+ClrHome
+Disp "IN HG:"
+Disp X
+Goto A6
+
+Lbl C3
+ClrHome
+Input "MM HG? ",X
+(X*S)/M→X
+ClrHome
+Disp "PSI:"
+Disp X
+Goto A6
+
+Lbl C4
+ClrHome
+Input "MM HG? ",X
+(X*P)/M→X
+ClrHome
+Disp "PA:"
+Disp X
+Goto A6
+
+Lbl D1
+ClrHome
+Input "IN HG? ",X
+(X*A)/I→X
+ClrHome
+Disp "ATM:"
+Disp X
+Goto A6
+
+Lbl D2
+ClrHome
+Input "IN HG? ",X
+(X*M)/I→X
+ClrHome
+Disp "MM HG:"
+Disp X
+Goto A6
+
+Lbl D3
+ClrHome
+Input "IN HG? ",X
+(X*S)/I→X
+ClrHome
+Disp "PSI:"
+Disp X
+Goto A6
+
+Lbl D4
+ClrHome
+Input "IN HG? ",X
+(X*P)/I→X
+ClrHome
+Disp "PA:"
+Disp X
+Goto A6
+
+Lbl E1
+ClrHome
+Input "PSI? ",X
+(X*A)/S→X
+ClrHome
+Disp "ATM:"
+Disp X
+Goto A6
+
+Lbl E2
+ClrHome
+Input "PSI? ",X
+(X*M)/S→X
+ClrHome
+Disp "MM HG:"
+Disp X
+Goto A6
+
+Lbl E3
+ClrHome
+Input "PSI? ",X
+(X*I)/S→X
+ClrHome
+Disp "IN HG:"
+Disp X
+Goto A6
+
+Lbl E4
+ClrHome
+Input "PSI? ",X
+(X*P)/S→X
+ClrHome
+Disp "PA:"
+Disp X
+Goto A6
+
+Lbl F1
+ClrHome
+Input "PA? ",X
+(X*A)/P→X
+ClrHome
+Disp "ATM:"
+Disp X
+Goto A6
+
+Lbl F2
+ClrHome
+Input "PA? ",X
+(X*M)/P→X
+ClrHome
+Disp "MM HG:"
+Disp X
+Goto A6
+
+Lbl F3
+ClrHome
+Input "PA? ",X
+(X*I)/P→X
+ClrHome
+Disp "IN HG:"
+Disp X
+Goto A6
+
+Lbl F4
+ClrHome
+Input "PA? ",X
+(X*S)/P→X
+ClrHome
+Disp "PSI:"
+Disp X
+Goto A6</string>
 		</dict>
 	</array>
 	<key>device name</key>
