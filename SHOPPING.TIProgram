@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHomeMenu("SHOPPER^S HELPER","Calculator",A1,"Instructions",A2,"Quit",A3)Lbl A2ClrHomeDisp "A value of 0"Disp "will QUIT"Disp ""Disp "Negative numbers"Disp "are subtracted"Disp ""Disp "Enter 1"Input "to BEGIN       ",YIf Y=0ThenStopEndIf Y=1ThenGoto A1EndEndLbl A1ClrHomeDisp "Enter Percentage"Disp "Rate of Tax"Disp ""Input ": ",PP/100→P1→A0→B0→C0→DClrHomeWhile A≠0ClrHomeInput "Price?  ",AA+B→BB*P→Cround(C,2)→COutput(3,1,"Subtotal: "Output(3,11,B)Output(4,1,"Tax: "Output(4,11,C)Output(6,1,"Total: "B+C→Dround(D,2)→DOutput(6,11,D)Output(8,1,"Press ENTER    ")getKey→KWhile K≠105getKey→KEndEndLbl A3Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>SHOPPING</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrDrawLine(7.6,10,7.6,–10)Line(10,10,10,–10)Text(0,85,"F")Text(6,85,"I")Text(12,85,"B")Text(18,85,"O")Text(24,85,"N")Text(30,85,"A")Text(36,85,"C")Text(42,85,"C")Text(48,85,"I")Text(12,90,"S")Text(18,90,"E")Text(24,90,"Q")Text(30,90,"U")Text(36,90,"E")Text(42,90,"N")Text(48,90,"C")Text(54,90,"E")StorePic Pic00→A1→X0→PText(P,0,A)6→PPause Text(P,0,X)12→PPause For(C,1,24,1)A+X→AText(P,0,A)If P=54:ThenPause :ClrDraw:RecallPic Pic00→P:Else:Pause :P+6→P:EndA+X→XText(P,0,X)If P=54:ThenPause :ClrDraw:RecallPic Pic00→P:Else:Pause :P+6→P:EndEndClrHome</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>FIBONACC</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

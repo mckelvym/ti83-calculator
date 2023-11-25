@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHomeFor(X,1,16,1)Output(1,X,round(rand ,0))EndFor(X,1,8,1)Output(X,16,round(rand ,0))EndFor(X,16,1,–1)Output(8,X,round(rand ,0))EndFor(X,8,1,–1)Output(X,1,round(rand ,0))EndFor(X,2,15,1)Output(2,X,round(rand ,0))EndFor(X,2,7,1)Output(X,15,round(rand ,0))EndFor(X,15,2,–1)Output(7,X,round(rand ,0))EndFor(X,7,2,–1)Output(X,2,round(rand ,0))EndFor(X,3,14,1)Output(3,X,round(rand ,0))EndFor(X,3,6,1)Output(X,14,round(rand ,0))EndFor(X,14,3,–1)Output(6,X,round(rand ,0))EndFor(X,6,3,–1)Output(X,3,round(rand ,0))EndFor(X,4,13,1)Output(4,X,round(rand ,0))EndFor(X,13,4,–1)Output(5,X,round(rand ,0))EndFor(X,4,13,1)rand →Arand →BOutput(4,X," ")EndFor(X,13,4,–1)rand →Arand →BOutput(5,X," ")EndFor(X,5,3,–1)rand →Arand →BOutput(X,3," ")EndFor(X,4,14,1)rand →Arand →BOutput(3,X," ")EndFor(X,4,6,1)rand →Arand →BOutput(X,14," ")EndFor(X,13,2,–1)rand →Arand →BOutput(6,X," ")EndFor(X,5,2,–1)rand →Arand →BOutput(X,2," ")EndFor(X,2,15,1)rand →Arand →BOutput(2,X," ")EndFor(X,3,7,1)Output(X,15," ")rand →Arand →BEndFor(X,14,1,–1)Output(7,X," ")rand →Arand →BEndFor(X,6,1,–1)Output(X,1," ")rand →Arand →BEndFor(X,2,16,1)Output(1,X," ")rand →Arand →BEndFor(X,2,8,1)Output(X,16," ")rand →Arand →BEndFor(X,15,1,–1)Output(8,X," ")rand →Arand →BEnd</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>SPIRAL</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

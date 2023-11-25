@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>prgmZSPLASHMenu("TEMPERATURE CONV","K...C",A1,"C...K",A2,"C...F",A3,"F...C",A4,"EXIT",A5)Lbl A1ClrHomeDisp "KELVIN "Disp "       2"Disp "         CELSIUS"Disp ""Prompt KK-273.15→CClrHomeDisp "C="Disp CPause ClrHomeGoto A5Lbl A2ClrHomeDisp "CELSIUS"Disp "        2"Disp "          KELVIN"Disp ""Prompt CC+273.15→KClrHomeDisp "K="Disp KPause ClrHomeGoto A5Lbl A3ClrHomeOutput(1,5,"CONVERT"Output(2,8,"2")Output(3,4,"FAHRENHEIT"Disp "","","",""Prompt C9/5(C)+32→Fround(F,2)→FClrHomeDisp "Fahrenheit: "Output(3,13,F)Goto A5Lbl A4ClrHomeOutput(1,5,"CONVERT"Output(2,8,"2")Output(3,5,"CELSIUS"Disp "","","",""Prompt F5/9((F)-32)→CClrHomeOutput(1,1,"Celsius: "round(C,2)→COutput(3,10,C)Goto A5Lbl A5Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>TEMPCONV</string>
+	<key>device type</key>
+	<string>TI-84 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

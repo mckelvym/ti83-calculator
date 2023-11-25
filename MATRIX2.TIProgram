@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHomeOutput(4,2,"ARE YOU READY?")Pause ClrHomeOutput(1,1,"0101010101010101")Output(2,1,"1010101010101010")Output(3,1,"0101010101010101")Output(4,1,"1010101010101010")Output(5,1,"0101010101010101")Output(6,1,"1010101010101010")Output(7,1,"0101010101010101")Output(8,1,"1010101010101010")For(A,0,20,1)0→KRepeat K=106getKey→KIf K=105ThenGoto B1EndrandInt(1,16)→BrandInt(1,16)→ZrandInt(1,16)→XrandInt(1,8)→YFor(C,1,8,1)Output(C,B,randInt(0,1))Output(C,Z,randInt(0,1))Output(C,X,randInt(0,1))Output(Y,C,randInt(0,1))Output(Y,C+8,randInt(0,1))EndFor(C,1,8,1)For(D,1,3,1)Output(C,B," ")Output(C,Z," ")Output(C,X," ")Output(Y,C," ")Output(Y,C+8," ")EndEndrandInt(1,16)→BrandInt(1,16)→ZrandInt(1,8)→YrandInt(1,8)→XFor(C,8,1,–1)Output(C,B,randInt(0,1))Output(C,Z,randInt(0,1))Output(Y,C,randInt(0,1))Output(Y,C+8,randInt(0,1))Output(X,C,randInt(0,1))Output(X,C+8,randInt(0,1))EndFor(C,8,1,–1)For(D,1,3,1)Output(C,B," ")Output(C,Z," ")Output(Y,C," ")Output(Y,C+8," ")Output(X,C," ")Output(X,C+8," ")EndEndrandInt(0,9)→XIf X=5ThenFor(G,8,1,–1)ClrHomeOutput(G,1,"   IT HAS YOU!  ")For(H,1,150,1)EndEndClrHomeEndEndEndGoto B1Lbl B1ClrHomeStop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>MATRIX2</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

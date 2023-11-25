@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHome:ClrDraw:AxesOff:FnOff Text(35,27,"Prss Enter")Text(57,0,"(c) Markus McKelvy 12/2003")Pause :ClrDrawLbl M1Menu("Math","Integrate",A1,"Derive",A2,"Sum(Seq(",A3,"List",A4,"Exit",Z1)Lbl A4:ClrHomeDisp "Input List"Input ": ",Str1"{"+Str1+"}"→L₁Lbl M2:ClrHomeMenu("Operation:","min",N1,"max",N2,"mean",N3,"median",N4,"sum",N5,"prod",N6,"More",M4)Lbl M4:ClrHomeMenu("More","stdDev",N7,"variance",N8,"Show List",O1,"Back",M2,"Exit",N9)Lbl N1:ClrHomeDisp min(L₁)Goto M3Lbl N2:ClrHomeDisp max(L₁)Goto M3Lbl N3:ClrHomeDisp mean(L₁)Goto M3Lbl N4:ClrHomeDisp median(L₁)Goto M3Lbl N5:ClrHomeDisp sum(L₁)Goto M3Lbl N6:ClrHomeDisp prod(L₁)Goto M3Lbl N7:ClrHomeDisp stdDev(L₁)Goto M3Lbl N8:ClrHomeDisp variance(L₁)Goto M3Lbl N9:ClrHomeGoto M1Lbl O1:ClrHomeDisp L₁Goto M3Lbl M3Pause :ClrHome:Goto M2Lbl A3:ClrHomeDisp "Sum(Seq(..."Disp ""Input ("Eq: ",Str1)Str1→Y₁Input ("Lower B: ",L)Input ("Upper B: ",U)ClrHomeOutput(1,1,"Calculating..."Output(8,1,"Please Wait")sum(seq(Y₁,X,L,U)→θClrHomeDisp "Ans"Output(3,1,":")Output(3,3,θ)""→Y₁Pause :ClrHomeGoto M1Lbl A2:ClrHomeDisp "Derivative..."Disp ""Disp "Eq"Input (": ",Str1)Str1→Y₀Disp ""Input ("A: ",A)Input ("B: ",B)ClrHomeOutput(1,1,"Calculating...")Output(8,1,"Please Wait")nDeriv(Y₀,X,A,B)→θClrHomeDisp "nDeriv()"Output(3,1,":")Output(3,3,θ)""→Y₀Pause :ClrHomeGoto M1Lbl A1:ClrHomeDisp "Integrate..."Disp ""Disp "Eq"Input (": ",Str1)Str1→Y₀Disp ""Input ("A: ",A)Input ("B: ",B)ClrHomeOutput(1,1,": Calculating")Output(3,1,": Please Wait")fnInt(Y₀,X,A,B)→θClrHomeOutput(1,1,"fnInt()")Output(4,1,":")Output(4,3,θ)""→Y₀Pause :ClrHomeGoto M1Lbl Z1:ClrHome:Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>MATH</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHome:FnOff :AxesOffLbl A1Menu("Physics Stuff","Vectors",V1,"Useful Eqs",U1,"Exit",Z1)Lbl Z1:ClrHome:FnOn :AxesOn:StopLbl V1:ClrHomeMenu("Vectors","Magnitude",V2,"Direction",V3,"Back",A1)Lbl V2:ClrHomeInput "i: ",IInput "j: ",JClrHomeDisp "Magnitude:"Disp √(I+J)Pause :Goto A1Lbl V3:ClrHomeInput "i: ",IInput "j: ",JClrHomeDisp "Direction"Disp tan(J/I)Pause :Goto A1Lbl U1:ClrHome0→K:0→X:While K≠11:getKey→KIf X=0:Then:ClrDrawText(0,0,"Use 1-4 for eqs")Text(8,0,"Enter returns to main menu.")Text(16,0,"Clear ends program.")1→XEndIf K=92:Then:ClrDrawText(0,0,"X=1/2AT+VoT+Xo")Text(6,0,"V=Vo+2Adx")Text(12,0,"T=(V-Vo)/A")Text(18,0,"-gsinθ+(Uk)gcosθ=0(F)")Text(24,0,"-mgsinθ=a v=rW KE=1/2mv")Text(30,0,"Vcm=(m1v1+m2v2)/(m1+m2)")Text(36,0,"V=√(GM/r) Ang Acc=dθ/dt")Text(42,0,"Ia=Icm+Mh mvrsinθ=IW")Text(48,0,"V=√((2mgsinθL)/(m+I/R))")Text(54,0,"X1=rcosθ Y1=rsinθ")EndIf K=93:Then:ClrDrawText(0,0,"R=(V/g)sin2θ - level")Text(6,0,"R=VoxT A=(V/R)")Text(12,0,"r=rcosθi+rsinθj")Text(18,0,"dr/dt=-rsinθdθ/dti+rcosθdθ/dtj")Text(24,0,"A=Fnet/m a1=(m2/m1)a2")Text(30,0,"N=mgcosθ Ay=0 Ax=-gsinθ")Text(36,0,"fs=(Us)N fk.. V=√(2gh)")Text(42,0,"F1=(Usmg)/(cosθ+Ussinθ)")Text(48,0,"(A=m2g-m1gsinθ)/(m1+m2)")Text(54,0,"W=1/2mVb-1/2mVa")EndIf K=94:Then:ClrDrawText(0,0,"KEf+Uf=KEi+Ui dKE=-dU Ef=Ei")Text(6,0,"KE=1/2mv PE=mgh")Text(12,0,"A=((m2-m1)/(m1+m2))g")Text(18,0,"U=V1-Vcm")Text(24,0,"m1v1+m2v2=m1v1'+m2v2'")Text(30,0,".5m1v1+.5m2v2=.5m1v1'+.5m2v2'")Text(36,0,"v1+v1'=v2+v2'")Text(42,0,"θ=1/2at+WoT+θo")Text(48,0,"T=Frsinθ T=Ia")Text(54,0,"a=(mg)/(I/R+m)")EndIf K=82:Then:ClrDrawText(0,0,"L=Iw L=mvr")Text(6,0,"F=(-GMm)/r g=(GM)/R")Text(12,0,"PE=(-GMm)/r Ve=√(2GM)/Re")Text(18,0,"T=((4π)/(GM))r^3")Text(24,0,"a=1/2(r1+r2) Ea=(-GM)/(2a)")EndIf K=105:Then:ClrDrawGoto A1:EndIf K=45:Then:ClrDraw:ClrHome:Stop:EndEnd</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>PHYSICS</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

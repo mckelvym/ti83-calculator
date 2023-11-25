@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHomeDisp "Grade Point Avg"Disp ""Input "0 to Continue  ",QIf Q=0ThenClrHomeInput "HOW MANY A'S?",AClrHomeInput "HOW MANY B'S?",BClrHomeInput "HOW MANY C'S?",CClrHomeInput "HOW MANY D'S?",DClrHome(A*4+B*3+C*2)/(A+B+C+D)→Ground(G,3)→GClrHomeDisp "Your GPA is:"Output(7,1,G)EndStop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>GPA</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

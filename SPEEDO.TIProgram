@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrDraw:Radian:FnOff Circle(0,0,5)Text(0,15,"** Speedometer **")Text(50,0,"Gar:")Text(56,0,"Speed (mph):")Text(56,45,"0")Line(–6cos(–π/4),6sin(–π/4),–3cos(–π/4),3sin(–π/4))Line(–6cos(5π/4),6sin(5π/4),–3cos(5π/4),3sin(5π/4))StorePic Pic00→K:0→C:1→G:–π/4→θ–5cos(θ)→X5sin(θ)→YLine(X,Y,0,0)While K≠45:getKey→KIf K=25:ThenIf θ&lt;(5π/4):Thenθ+.1→θ:C+2.5→CClrDraw:EndRecallPic Pic0Text(56,45,C)–5cos(θ)→X5sin(θ)→YLine(X,Y,0,0)–5cos(θ-.03)→X5sin(θ+.03)→YLine(X,Y,0,0)–5cos(θ+.03)→X5sin(θ+.03)→YLine(X,Y,0,0):EndIf K=34:ThenIf θ&gt;(–π/4):Thenθ-.1→θ:C-2.5→CClrDraw:EndRecallPic Pic0Text(56,45,C)–5cos(θ)→X5sin(θ)→YLine(X,Y,0,0)–5cos(θ-.03)→X5sin(θ-.03)→YLine(X,Y,0,0)–5cos(θ+.03)→X5sin(θ+.03)→YLine(X,Y,0,0):EndIf C&lt;15:Then:Text(50,20,"1    "):Else:If C&lt;27.5:Then:Text(50,20,"2    "):Else:If C&lt;37.5:Then:Text(50,20,"3    "):Else:If C&lt;47.5:Then:Text(50,20,"4    "):Else:If C&lt;80:Then:Text(50,20,"5    "):Else:Text(50,20,"6–OD"):End:End:End:End:EndEnd:Degree:FnOn :ClrHome</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>SPEEDO</string>
+	<key>device type</key>
+	<string>TI-84 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

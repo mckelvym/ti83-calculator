@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>prgmZSPLASH:prgmZGRAPH:ClrHome:a+bLbl A1:Menu("HERONS FORMULA:","INPUT/CALC",A2,"EXIT",A3)Lbl A2:ClrHomeInput "SIDE A: ",A:Disp "":Input "SIDE B: ",B:Disp "":Input "SIDE C: ",C:ClrHome0→XIf (A+B)≤CThen1→XEndIf (B+C)≤AThen1→XEndIf (A+C)≤BThen1→XEndIf X=1ThenOutput(1,1,"NOT A TRIANGLE!")Output(3,1,"-&gt;"):Output(3,3,A):Output(4,1,"-&gt;"):Output(4,3,B):Output(5,1,"-&gt;"):Output(5,3,C)EndIf X=0Then(A+B+C)/2→S√(S(S-A)(S-B)(S-C))→KDisp "AREA:"Output(3,1,"K= ")round(K,5)→KOutput(3,4,K)EndOutput(8,1,"PRESS ENTER...")Pause :Goto A1Lbl A3:Real:ClrHome:Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>HERONS</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

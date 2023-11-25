@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>Lbl 0ClrHomeMenu("Single serv Q","Balance Eqs",1,"Pj from Po",2,"Steady st prob",3,"Derive L",4,"Derive W,Wq,Lq",5,"Quit",99)Lbl 1Disp "LP0=MP1","LP[j-1]+MP[j+1]=","LPj+MPj","j=1,2,..."Pause Goto 0Lbl 2Disp "P1=L/M P0"Disp "P[j+1]=((L+M)Pj-","LP[j-1])(1/M)","J=1,2,..."Pause ClrHomeDisp "Let j=1","P2=(1/M)((L+M)P1","-LP0)","...","=L/M P0"Pause ClrHomeDisp "Pj=(L/M)^j P0","j=0,1,2,...","Pj=R^J P0"Pause Goto 0Lbl 3Disp "What is P0?","Let R=L/M","1=P0+P1+P2+...","=P0+RP0+RP0+...","=P0(1+R+R+...","=P0(1/(1-R))Pause ClrHomeDisp "P0=1-R","Pj=R^j(1-R)","j=0,1,2,..."Pause Goto 0Lbl 4Disp "E[num(system)]"Disp "sum(jPj)=","0P0+1P1+2P2+...","=0(1-R)+1R^1(1-R",")+2R(1-R)+..."Pause ClrHomeDisp "=R(1-R)(1+2R+3R","=R(1-R)1/(1-R)","=R/(1-R)","=L/(M-L)"Pause Goto 0Lbl 5Disp "What is W?","Littles Eq:","L=Lambda*W","W=L/Lambda","=1/(M-L)"Pause ClrHomeDisp "Wq=W-Ws","=1/(L-M)-1/M","=L/(M(M-L))"Pause ClrHomeDisp "Lq=Lambda*Wq","=L/(M(M-L))"Pause Goto 0Lbl 99Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>STAT</string>
+	<key>device type</key>
+	<string>TI-84 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>prgmZGRAPHprgmZSPLASHOutput(1,1,"LATIN DECLENSION")Output(2,6,"HELPER")Output(5,1,"USE KEYS 1-8")Output(6,1,"FOR NAVIGATION")Output(8,1,"ALL OTHERS EXIT."Goto B1Lbl A1ClrHomeOutput(1,14,"1 F")Output(2,1,"–S–  –PL–")Output(3,2,"A    AE")Output(4,2,"AE   ARUM")Output(5,2,"AE   IS")Output(6,2,"AM   AS")Output(7,2,"A    IS")Output(8,2,"A    AE")Goto B1Lbl A2ClrHomeOutput(1,14,"2 M")Output(2,1,"–S–  –PL–")Output(3,1," US   I")Output(4,1," I    ORUM")Output(5,1," O    IS")Output(6,1," UM   OS")Output(7,1," O    IS")Output(8,1," E    I")Goto B1Lbl A3ClrHomeOutput(1,14,"2 N")Output(2,1,"–S–  –PL–")Output(3,1," UM   A")Output(4,1," I    ORUM")Output(5,1," O    IS")Output(6,1," UM   A")Output(7,1," O    IS")Output(8,1," UM   A")Goto B1Lbl A4ClrHomeOutput(1,12,"3 M/F")Output(2,1,"–S–  –PL–")Output(3,1," –    ES")Output(4,1," IS   UM")Output(5,1," I    IBUS")Output(6,1," EM   ES")Output(7,1," E    IBUS")Goto B1Lbl A5ClrHomeOutput(1,14,"3 N")Output(2,1,"–S–  –PL–")Output(3,1," –    A")Output(4,1," IS   UM")Output(5,1," I    IBUS")Output(6,1," –    A")Output(7,1," E    IBUS")Goto B1Lbl A6ClrHomeOutput(1,14,"4 M")Output(2,1,"–S–  –PL–")Output(3,1," US   uS")Output(4,1," uS   UUM")Output(5,1," UI   IBUS")Output(6,1," UM   uS")Output(7,1," u    IBUS")Goto B1Lbl A7ClrHomeOutput(1,14,"4 N")Output(2,1,"–S–  –PL–")Output(3,1," u    UA")Output(4,1," uS   UUM")Output(5,1," UI   IBUS")Output(6,1," u    UA")Output(7,1," u    IBUS")Goto B1Lbl A8ClrHomeOutput(1,14,"5 F")Output(2,1,"–S–  –PL–")Output(3,1," S   S")Output(4,1," EI   RUM")Output(5,1," EI   BUS")Output(6,1," EM   S")Output(7,1,"     BUS")Goto B1Lbl A9ClrHomeStopLbl B1getKey→XWhile X=0getKey→XEndIf X=92ThenGoto A1ElseIf X=93ThenGoto A2ElseIf X=94ThenGoto A3ElseIf X=82ThenGoto A4ElseIf X=83ThenGoto A5ElseIf X=84ThenGoto A6ElseIf X=72ThenGoto A7ElseIf X=73ThenGoto A8ElseGoto A9EndEndEndEndEndEndEndEnd</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>LATIN</string>
+	<key>device type</key>
+	<string>TI-83 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>

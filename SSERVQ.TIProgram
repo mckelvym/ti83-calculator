@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cells</key>
+	<array>
+		<dict>
+			<key>column</key>
+			<integer>1</integer>
+			<key>row</key>
+			<integer>1</integer>
+			<key>stringValue</key>
+			<string>ClrHomeLbl 0Menu("Single serv Q","Calc",1,"Equations",2,"Quit",99)Lbl 1ClrHomeDisp "Arrival rate"Input "Lambda? ",LDisp "Service rate"Input "Mu? ",MClrHomeL/M→RR/(1-R)→Q1/(M-L)→SL/(M*(M-L))→W(L)/(M*(M-L))→NDisp "rho=",RDisp "P(idle)=",(1-R)Disp "P(busy)=",RDisp "Pj=rho^j*(1-rho)"Pause ClrHomeDisp "E[num(Q)]","Lq=",NDisp "E[time(Q)]","Wq=",WPause ClrHomeDisp "E[num(system)]","L=",QDisp "E[time(system)]","W=",SPause Goto 0Lbl 2Disp "P(idle)=(1-R)","P(busy)=R","Pj=R^j(1-R)","L=R/(1-R)","W=1/(M-L)","Wq=L/(M(M-L))","Lq=L/(M(M-L))"Pause Goto 0Lbl 99Stop</string>
+		</dict>
+	</array>
+	<key>device name</key>
+	<string>SSERVQ</string>
+	<key>device type</key>
+	<string>TI-84 Plus</string>
+	<key>isProtected</key>
+	<false/>
+	<key>object type</key>
+	<string>Program</string>
+</dict>
+</plist>
